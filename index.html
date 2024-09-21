@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="images/todo.svg" >
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="">
+    <form class="w-[50%] mx-auto mt-[50px] p-5 bg-white rounded-[10px]">
+      <marquee>
+        <h2 class="text-[25px] font-semibold">Create your Todo</h2>
+      </marquee>
+      <div class="flex justify-between mt-[20px]">
+        <input
+          required
+          class="w-[72%] p-[12px] outline-none border-[2px] border-violet-300 rounded-[12px] focus:border-violet-500 focus:shadow-lg"
+          type="text"
+          placeholder="Enter name of your Todo...."
+        />
+        <button
+          class="w-[26%] bg-violet-500 rounded-[12px] text-white font-semibold duration-300 hover:bg-opacity-35"
+          type="submit"
+        >
+          Enter
+        </button>
+      </div>
+    </form>
+    <div
+      class="w-[50%] mx-auto mt-[20px] flex justify-between p-5 bg-white rounded-[10px]"
+    >
+      <button
+        class="w-[25%] p-[15px] bg-violet-500 rounded-[12px] text-white font-semibold btn-style"
+        type="submit"
+      >
+        All(<span id="all">0</span>)
+      </button>
+      <button
+        class="w-[25%] p-[15px] bg-violet-500 rounded-[12px] text-white font-semibold btn-style"
+        type="submit"
+      >
+        Complated(<span id="complated">0</span>)
+      </button>
+      <button
+        class="w-[25%] p-[15px] bg-violet-500 rounded-[12px] text-white font-semibold btn-style"
+        type="submit"
+      >
+        Uncomplated(<span id="uncomplated">0</span>)
+      </button>
+    </div>
+    <ul
+      class="list w-[50%] mx-auto mt-[10px] p-5 flex flex-col gap-3 bg-white rounded-[10px]"
+    ></ul>
+    <script src="main.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

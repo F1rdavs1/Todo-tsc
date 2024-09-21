@@ -1,0 +1,21 @@
+body, .btn-style {
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ff5733;
+  }
+  25% {
+    background-color: #33ff57;
+  }
+  50% {
+    background-color: #3357ff;
+  }
+  75% {
+    background-color: #f3ff33;
+  }
+  100% {
+    background-color: #ff5733;
+  }
+}
